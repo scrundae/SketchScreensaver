@@ -26,7 +26,7 @@ def set_fullscreen():
 set_fullscreen()  # Make the turtle window fullscreen
 
 # Run the drawing loop
-for _ in range(1000):  # Draw 1000 lines
+while True:
     turtle.pencolor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
     turtle.pensize(random.randint(0, 10))
     turtle.goto(random.randint(-screen_width, screen_width), random.randint(-screen_height, screen_height))
